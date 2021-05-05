@@ -1,4 +1,4 @@
-// Pipeline declarativo
+ // Pipeline declarativo
 pipeline {
     //Ejecutar desde cualquier agente (nodo) disponible
     agent any
@@ -10,5 +10,6 @@ pipeline {
             steps{
                 echo "Fase 1 paso 1..."
             }
-     }
- }
+		}
+	}
+}
