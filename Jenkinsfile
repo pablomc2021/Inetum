@@ -5,14 +5,13 @@ pipeline {
     
     //Fases
     stages {
-        stage('Build'){
+        stage('Fase 1 - Build'){
             // Pasos de la fase
             steps{
-                echo "Building artifact"
+                echo "Fase 1 paso 1..."
             }
         }
-    }
-    stage('Testing'){
+		stage('Fase 2 - Testing'){
             // Pasos de la fase
             steps{
                 echo "Tes Unitarios.."
@@ -20,12 +19,11 @@ pipeline {
                 echo "Tes Aceptacion..."
             }
         }
-    stages {
-        stage('Deploy'){
+		stage('Fase 3 - Deploy'){
             // Pasos de la fase
             steps{
-                echo "Deplay artefact"
+                echo "desplegando artefecto.."
             }
         }
     }
-}
+ }
